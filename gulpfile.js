@@ -90,4 +90,18 @@ export function dev() {
   watch('src/img/**/*.{jpg,png}', imagenes);
 }
 
-export default series(imagenes, crop, css, js, dev);
+export function ensureDistDirectory(done) {
+
+  const distDir = './dist';
+
+  if (!fs.existsSync(distDir)) {
+
+    fs.mkdirSync(distDir, { recursive: true });
+
+  }
+
+  done();
+
+}
+
+export default series(ensureDistDirectory, imagenes, crop, css, js, dev);
