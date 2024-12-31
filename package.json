@@ -1,0 +1,25 @@
+{
+  "name": "concierto",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y Gulp",
+  "keywords": [
+    "SASS",
+    "GULP",
+    "HTML"
+  ],
+  "license": "ISC",
+  "author": "Daniel Estrella",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "devDependencies": {
+    "glob": "^11.0.0",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.83.0",
+    "sharp": "^0.33.5"
+  }
+}
